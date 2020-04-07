@@ -1,0 +1,32 @@
+<html>
+  <head>
+      <link rel= "stylesheet"
+            type= "text/css"
+            href="{{url_for('static',
+                  filename=
+                  'styles/style.css')}}">
+  </head>
+  <body>
+    <h1>Millimeters to inches</h1>
+    <div id="output">
+      <form method="POST">
+        <input type="number"
+               name="milli"
+               step=".01"
+               min="0.01"
+               placeholder="Millimeters"
+               required>
+        <input type="submit"
+               value="Convert">
+      </form>
+
+      {% if inches %}
+      <h3>
+        {{milli}} millimeters is
+        {{inches}} inches
+      </h3>
+      {% endif %}
+
+    </div>
+  </body>
+</html>

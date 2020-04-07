@@ -1,0 +1,16 @@
+{
+  "name": "slipslap-warehouse",
+  "version": "1.0.0",
+  "description": "REST API to access SlipSlap's warehouse Google Sheet",
+  "repository": "github:momander/serverlesstoolbox/tree/master/rest-api-sheet",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Martin Omander",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^40.0.0"
+  }
+}
